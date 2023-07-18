@@ -185,7 +185,7 @@ bar {
         urgent_workspace   $green $green $background
         binding_mode       $green $green $background
     }
-    status_command /usr/bin/bumblebee-status -m datetime cpu memory battery pulseout\
+    status_command /usr/bin/bumblebee-status -m datetime cpu memory pulseout battery \
     -p  datetime.format="%m/%d %H:%M" -t monotone
 }
 
