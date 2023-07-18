@@ -4,7 +4,8 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
-vim.wo.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Disable mouse
 vim.opt.mouse = ""
@@ -25,9 +26,9 @@ vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.ai = true -- Auto indent
-vim.opt.si = true -- Smart indent
-vim.opt.wrap = false -- No wrap lines
+vim.opt.ai = true            -- Auto indent
+vim.opt.si = true            -- Smart indent
+vim.opt.wrap = false         -- No wrap lines
 vim.opt.backspace = "start,eol,indent"
 vim.opt.path:append { "**" } -- Finfing files - search down into subfolders
 vim.opt.wildignore:append { "*/node_modules/*" }
