@@ -276,3 +276,6 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Take screenshot
 bindsym $mod+p exec maim --format=png ~/Pictures/screenshot-$(date +%F_%H%M%S)-all.png
+
+# 解像度を指定
+exec --no-startup-id "xrandr --output eDP --mode 1920x1200"
