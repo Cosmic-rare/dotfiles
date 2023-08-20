@@ -16,13 +16,13 @@ Layout=
 # Group Name
 Name="Group 1"
 # Layout
-Default Layout=jp
+Default Layout=us
 # Default Input Method
 DefaultIM=mozc
 
 [Groups/1/Items/0]
 # Name
-Name=keyboard-jp
+Name=keyboard-us
 # Layout
 Layout=
 
