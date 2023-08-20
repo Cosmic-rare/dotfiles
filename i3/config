@@ -17,7 +17,7 @@ bindsym $mod+m exec --no-startup-id thunar
 bindsym $mod+q kill
 
 # ランチャー
-bindsym $mod+z exec --no-startup-id "rofi -show drun -theme $HOME/.config/rofi/theme.rasi"
+bindsym $mod+space exec --no-startup-id "rofi -show drun -theme $HOME/.config/rofi/theme.rasi"
 bindsym $mod+x exec --no-startup-id "rofi -show combi -theme $HOME/.config/rofi/theme.rasi"
 
 # ウインドウフォーカス
@@ -60,7 +60,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+w floating toggle
 
 # フロートウインドウフォーカス
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+Space focus mode_toggle
 
 # 親コンテナへのフォーカス
 bindsym $mod+a focus parent
