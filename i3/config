@@ -189,7 +189,7 @@ bar {
         binding_mode       $green $green $background
     }
     status_command /usr/bin/bumblebee-status -m datetime cpu memory pulseout battery \
-    -p  datetime.format="%m/%d %H:%M" -t monotone
+    -p  datetime.format="%m/%d %H:%M" -t nord-powerline
 }
 
 # i3wm全体の色
