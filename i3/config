@@ -20,6 +20,9 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id "rofi -show drun -theme $HOME/.config/rofi/theme.rasi"
 bindsym $mod+x exec --no-startup-id "rofi -show combi -theme $HOME/.config/rofi/theme.rasi"
 
+# 音声関係
+bindsym $mod+Shift+s exec --no-startup-id pavucontrol
+
 # ウインドウフォーカス
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -262,3 +265,11 @@ for_window [class="kdeconnect-app"] floating enbale
 assign [class="discord"] workspace 3
 assign [class="Slack"] workspace 3
 
+# 輝度調整
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
+# 音量調整
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
