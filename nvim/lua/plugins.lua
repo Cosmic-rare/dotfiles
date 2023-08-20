@@ -19,6 +19,9 @@ packer.startup(function(use)
   }
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'L3MON4D3/LuaSnip'
+  use 'akinsho/nvim-bufferline.lua'  -- Tab
+  use 'nvim-lua/plenary.nvim'        -- Common utilities
+  use 'norcalli/nvim-colorizer.lua'  -- colorizer
 
   -- for lsp
   use 'neovim/nvim-lspconfig'
@@ -33,4 +36,12 @@ packer.startup(function(use)
     'nvimdev/lspsaga.nvim',
     after = 'nvim-lspconfig',
   }
+
+  -- autopar
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
+
+  -- telescope
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
 end)
