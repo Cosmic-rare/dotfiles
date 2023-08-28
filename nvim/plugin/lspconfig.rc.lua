@@ -15,6 +15,10 @@ nvim_lsp.tsserver.setup {
   on_attach = on_attach,
 }
 
+nvim_lsp.gopls.setup {
+
+}
+
 nvim_lsp.lua_ls.setup {
   on_attach = function(client, bufnr)
     on_attach(client, bufnr)
