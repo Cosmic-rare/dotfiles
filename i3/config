@@ -7,6 +7,10 @@ font pango:Noto Sans CJK JP 10
 # フローティングウインドウの操作キー
 floating_modifier $mod
 
+# マルチモニター対応
+set $fm eDP
+set $sm HDMI-A-0
+
 # ターミナル
 bindsym $mod+Return exec --no-startup-id alacritty
 
@@ -70,6 +74,18 @@ bindsym $mod+a focus parent
 
 # 子コンテナへのフォーカス
 bindsym $mod+b focus child
+
+# ワークスペースをモニターごとに設定
+workspace 1 output $fm
+workspace 2 output $fm
+workspace 3 output $fm
+workspace 4 output $fm
+workspace 5 output $fm
+workspace 6 output $sm
+workspace 7 output $sm
+workspace 8 output $sm
+workspace 9 output $sm
+workspace 10 output $sm
 
 # ワークスペース変数
 set $ws1 "1"
@@ -229,6 +245,8 @@ gaps inner 6
 focus_follows_mouse no
 
 # 自動起動
+
+exec --no-startup-id "xrandr --output eDP --primary --mode 1920x1200 --pos 1920x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 0x60 --rotate normal --output DisplayPort-0 --off --output DisplayPort-1 --off"
 exec --no-startup-id dunst
 exec --no-startup-id picom 
 exec --no-startup-id xfce4-power-manager
