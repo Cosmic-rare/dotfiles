@@ -22,6 +22,7 @@ packer.startup(function(use)
   use 'akinsho/nvim-bufferline.lua'  -- Tab
   use 'nvim-lua/plenary.nvim'        -- Common utilities
   use 'norcalli/nvim-colorizer.lua'  -- colorizer
+  use 'nvim-tree/nvim-tree.lua'      -- filer(side)
 
   -- for lsp
   use 'neovim/nvim-lspconfig'
